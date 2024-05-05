@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&family=Yanone+Kaffeesatz&display=swap');
+
+.Jess--message {
+    width: 750px;
+    background-color: rgb(90, 90, 90);
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.Jess--header {
+    width: 750px;
+    height: 250px;
+    display: flex;
+    border-top-right-radius: 50px;
+    border-bottom: 10px solid #ACE0E4;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/095b362d-6c4d-4adf-9498-3d8d07222a75/dcbl5bj-4eab3057-9b8a-48db-8f60-1250216c8eb8.jpg/v1/fill/w_800,h_283,q_70,strp/saloon_shootout_by_deivcalviz_dcbl5bj-400t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzA3IiwicGF0aCI6IlwvZlwvMDk1YjM2MmQtNmM0ZC00YWRmLTk0OTgtM2Q4ZDA3MjIyYTc1XC9kY2JsNWJqLTRlYWIzMDU3LTliOGEtNDhkYi04ZjYwLTEyNTAyMTZjOGViOC5qcGciLCJ3aWR0aCI6Ijw9MjAwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.NsbpK-bre3fvdS0-YXf8Rg6sRE2YRuvjOstDitOziJ4');
+    background-position: bottom;
+    background-color: #000000b8;
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+.mask--image {
+    -webkit-mask-image: url("https://i.ibb.co/XJc14h6/Sans-titre-1.png");
+    mask-image: url("https://i.ibb.co/XJc14h6/Sans-titre-1.png");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    width: 200px;
+}
+
+.Jess--image {
+    background-image: url("https://zupimages.net/up/23/33/qrqd.png");
+    background-size: cover;
+    height: 350px;
+}
+
+.Jess--imageContainer {
+    position: relative;
+    top: -30%;
+    left: -10%;
+}
+
+.header--title {
+    font-family: 'Rubik', sans-serif;
+    margin-block: 75px;
+    color: #ff86de;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.Jess--body {
+    color: #cdcdcd;
+    padding-block: 35px;
+    padding-inline: 30px;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-size: 1.6em !important;
+}
+
+.Jess--body:first-letter {
+    float: left;
+    text-shadow: 3px 3px 3px #00000054;
+    font-size: 4em;
+    line-height: 80%;
+    margin: -.1em 0px;
+    padding-right: .1em;
+}
+
+jess {
+    display: inline;
+    font-weight: bold;
+    color: black;
+}
+
+grim {
+    display: inline;
+    text-transform: uppercase;
+    color: #ACE0E4;
+}
+
+jaina {
+    display: inline;
+    color: #7f0707;
+}
