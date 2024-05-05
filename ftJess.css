@@ -1,0 +1,110 @@
+.pirates h2 {
+    background: linear-gradient(-45deg, #6a6a6a, #101010) !important;
+}
+
+.pirates {
+    background: linear-gradient(-45deg, #6a6a6a, #101010) !important;
+}
+
+.fiche-header {
+    background-image: url('https://i.servimg.com/u/f79/20/51/37/68/the_fo10.jpg') !important;
+}
+
+.fiche-header:before {
+    background: unset !important;
+}
+
+.pirates h2:after {
+    border: 1px solid #00000091;
+}
+
+.fiche-block article {
+    background-color: grey !important;
+    color: #f3f3f3 !important;
+}
+
+.fiche-block:first-of-type article span {
+    border-bottom: unset !important;
+    padding: 10px;
+    margin-bottom: unset !important;
+}
+
+#selectionDisplay {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 50px;
+    background-color: #212121;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+     
+}
+
+#selectionDisplay input {
+    display: none;
+}
+
+#selectionDisplay label {
+    cursor: pointer;
+    color: white;
+}
+
+#MyFT:checked + #labelMyFT {
+    color: #a70a0a;
+}
+
+#MyDeck:checked + #labelMyDeck {
+    color: #a70a0a;
+}
+
+#selectionDisplay:has(#MyFT:checked) ~ #ficheToDisplay {
+    display: block;
+}
+
+#selectionDisplay:has(#MyFT:checked) ~ #deckToDisplay {
+    display: none;
+}
+
+#selectionDisplay:has(#MyDeck:checked) ~ #ficheToDisplay {
+    display: none;
+}
+
+#selectionDisplay:has(#MyDeck:checked) ~  #deckToDisplay {
+    display: flex;
+}
+
+#deckToDisplay {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 799px;
+}
+
+.tarotInfo {
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #000000d9;
+    top: 0;
+}
+
+.tarotContainer:hover > .tarotInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 15px;
+}
+
+.TitreTarot {;
+    color: #c27cff;
+    font-size: 1.8rem !important;
+    text-transform: uppercase;
+}
+
+.SensTarot {
+    font-size: 1.5rem !important;
+    text-align: left;
+    color: white;
+}
