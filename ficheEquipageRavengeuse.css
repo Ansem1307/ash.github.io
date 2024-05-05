@@ -1,0 +1,244 @@
+p {
+    margin: 0 !important;
+}
+
+.ficheCustom {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+#entete {
+    width: inherit;
+    height: 500px;
+    position: relative;
+}
+
+#imageEntete {
+    width: inherit;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    height: inherit;
+    object-fit: cover;
+}
+
+#bloodCloud {
+    width: inherit;
+    height: inherit;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: absolute;
+    mix-blend-mode: hard-light;
+    bottom: 0;
+}
+
+#couleurNuage {
+    background-color: darkred;
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    mix-blend-mode: darken;
+    z-index: 1;
+    bottom: 0;
+}
+
+#info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: inherit;
+    z-index: 4;
+    top: 10%;
+    font-size: 5rem;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+    padding-block: 10px;
+    color: white;
+}
+
+#nom {
+    padding-left: 50px;
+}
+
+#groupe {
+    padding-right: 100px;
+    color: darkred;
+}
+
+#corpsFiche {
+    color: white;
+    width: inherit;
+    padding-inline: 50px;
+    background-color: #131313;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-block: 30px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#conteneurImageBateau {
+    position: relative;
+    border: 1px solid darkred;
+    border-radius: 20px;
+    width: 700px;
+}
+
+#bateauImage {
+    width: 698px;
+    border-radius: 20px;
+}
+
+#nomBateau {
+    display: flex;
+    justify-content: center;
+    background-color: #0c0c0c;
+    font-size: 3rem;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+    padding-block: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 698px;
+    color: darkred;
+}
+
+.description {
+    border: 1px solid darkred;
+    background-color: #0c0c0c;
+    padding-right: 20px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    padding-left: 136px;
+    padding-block: 20px;
+}
+
+.description2 {
+    padding-left: 20px;
+    padding-right: 100px;
+}
+
+.smoke {
+    width: 250px;
+    position: absolute;
+    top: -65px;
+    left: -50px;
+}
+
+.smoke2 {
+    left: unset;
+    right: -100px;
+    transform: rotateZ(320deg);
+}
+
+.nameRP, .link, .nomPerso {
+    font-family: 'Chinese Rocks Rg', sans-serif;
+    color: darkred !important;
+    font-size: 2rem;
+}
+
+.link {
+    font-size: unset;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.link:visited {
+    color: darkred;
+}
+
+.listChrono {
+    list-style-type: none !important;
+    padding: 0;
+}
+
+.labelMember {
+    color: white;
+    margin: 0;
+    z-index: 2;
+    background-color: #313131;
+    border: 1px solid darkred;
+    border-top: none;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+}
+
+.labelMember:first-of-type {
+    border-bottom-left-radius: 20px;
+}
+
+.labelMember:last-of-type {
+    border-right: none;
+}
+
+.listItem {
+    margin-bottom: 30px;
+}
+
+#jainaDescription, #valkiaDescription, #jessicaDescription, #silkeDescription {
+    height: 500px;
+    border: 1px solid darkred;
+    border-top-left-radius: 20px;
+    border-right: 0;
+    border-bottom: 0;
+    margin-top: 30px;
+    display: none;
+    gap: 30px;
+}
+
+.descriptionPerso {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+    padding-block: 30px;
+    padding-right: 20px;
+}
+
+.descriptionPerso::-webkit-scrollbar {
+    width: 5px;
+}
+
+.descriptionPerso::-webkit-scrollbar-thumb {
+    background: darkred;
+}
+
+.descriptionPerso::-webkit-scrollbar-track {
+    background: #131313;
+}
+
+.persoImage {
+    width: 200px;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+#listMembre:has(#jaina:checked) ~ #jainaDescription, #listMembre:has(#valkia:checked) ~ #valkiaDescription, #listMembre:has(#jessica:checked) ~ #jessicaDescription, #listMembre:has(#silke:checked) ~ #silkeDescription, #listMembre {
+    display: flex
+}
+
+#listMembre:has(#jaina:checked) ~ #valkiaDescription + #jessicaDescription + #silkeDescription, #listMembre:has(#valkia:checked) ~  #jainaDescription + #jessicaDescription + #silkeDescription, #listMembre:has(#jessica:checked) ~ #jainaDescription + #valkiaDescription + #silkeDescription, #listMembre:has(#silke:checked) ~ #jainaDescription + #valkiaDescription + #jessicaDescription, input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    color: darkred;
+}
