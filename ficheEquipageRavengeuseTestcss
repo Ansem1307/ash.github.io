@@ -234,10 +234,6 @@ p {
     display: flex
 }
 
-#listMembre:has(#jaina:checked) ~ #valkiaDescription + #jessicaDescription + #silkeDescription, #listMembre:has(#valkia:checked) ~  #jainaDescription + #jessicaDescription + #silkeDescription, #listMembre:has(#jessica:checked) ~ #jainaDescription + #valkiaDescription + #silkeDescription, #listMembre:has(#silke:checked) ~ #jainaDescription + #valkiaDescription + #jessicaDescription, input[type="radio"] {
-    display: none;
-}
-
 input[type="radio"]:checked + label {
     color: darkred;
 }
