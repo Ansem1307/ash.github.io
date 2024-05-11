@@ -210,6 +210,8 @@ p {
     overflow-y: scroll;
     padding-block: 30px;
     padding-right: 20px;
+    scrollbar-color : darkred #131313;
+    scrollbar-width: thin;
 }
 
 .descriptionPerso::-webkit-scrollbar {
