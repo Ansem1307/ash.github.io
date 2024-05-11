@@ -234,6 +234,10 @@ p {
     display: flex
 }
 
+input[type="radio"]{
+    display : none;
+}
+
 input[type="radio"]:checked + label {
     color: darkred;
 }
