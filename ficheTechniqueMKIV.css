@@ -58,6 +58,7 @@
 
 .imagePersoFT{
     width: 200px;
+    height : 360px !important;
     object-fit: cover;
     border: 4px solid #0F8DA6;
     border-top-left-radius: 20px;
