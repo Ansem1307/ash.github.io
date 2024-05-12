@@ -1,0 +1,285 @@
+@import url('https://fonts.cdnfonts.com/css/new-york-hardcore');
+
+#ficheJess{
+    width: 800px;
+}
+
+#headerConteneur{
+    position: relative;
+    height: 454px;
+}
+
+#imageHeaderFT{
+    width: 800px;
+    height: 454px;
+    object-fit: cover;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+#nomVignette{
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width : 450px;
+    color: #ffffff;
+    background-color: #414141;
+    font-size: 1.5em;
+    letter-spacing: .12rem;
+    padding-left: 10px;
+    padding-block: 5px;
+    font-family: 'New York Hardcore', sans-serif;
+    clip-path: polygon(0 0, 90% 0, 100% 99%, 0% 100%);
+    z-index: 2;
+}
+
+#borderVignette{
+    position: absolute;
+    clip-path: polygon(0 0, 88.5% 0, 100% 99%, 0% 100%);
+    background-color: #0F8DA6;
+    width: 470px;
+    height: 45px;
+    bottom: -14px;
+    left: 0;
+}
+
+#ficheBody{
+    padding: 30px;
+    background-color: #414141;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-image: url(https://i.postimg.cc/rpFrCDNt/pattern.png);
+}
+
+.imagePersoFT{
+    width: 200px;
+    object-fit: cover;
+    border: 4px solid #0F8DA6;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.pnjFT{
+    border-top-left-radius: 0;
+    height: 320px;
+    width: 150px;
+}
+
+.divTech{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+}
+
+#chrono{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+}
+
+#firstDesc{
+    height: 360px;
+}
+
+.pnjDesc{
+    gap : 0;
+}
+
+.descTech{
+    border: 4px solid #0F8DA6;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 30px;
+    background-color: #ffffff;
+    color : #414141;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+#listRP{
+    border-bottom-left-radius: 20px;
+}
+
+.descTech::-webkit-scrollbar,
+.descPnj::-webkit-scrollbar{
+    width: 5px;
+}
+
+.descTech::-webkit-scrollbar-thumb,
+.descPnj::-webkit-scrollbar-thumb{
+    background: #0F8DA6;
+}
+
+.descTech::-webkit-scrollbar-track,
+.descPnj::-webkit-scrollbar-track{
+    background: #414141;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-block: 5px;
+}
+
+.descPnj::-webkit-scrollbar-track{
+    margin-block: 10px;
+}
+
+.listCustom{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+#listChrono{
+    display: flex;
+    width: 100%;
+}
+
+.listElemChrono{
+    background-color: #ffffff;
+    color: #414141;
+    border: 4px solid #0F8DA6;
+    padding-inline: 20px;
+    padding-block: 10px;
+    font-family: 'New York Hardcore', sans-serif;
+    border-bottom : none;
+}
+
+.listElemChrono:first-of-type{
+    border-top-left-radius: 20px;
+}
+
+.listElemChrono:last-of-type{
+    border-top-right-radius: 20px;
+    border-left: 0;
+    align-items: flex-end;
+}
+
+.listBis{
+    margin-bottom: 0;
+}
+
+.listElemCustom{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    background-color: #ffffff;
+    color: #414141;
+    padding-block: 20px;
+    padding-inline: 10px;
+    border: 4px solid #0F8DA6;
+    border-bottom : none;
+    font-family: 'New York Hardcore', sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 15px;
+}
+
+.listElemCustom:first-of-type{
+    border-top-left-radius: 20px;
+}
+
+.listElemCustom:last-of-type{
+    border-bottom: 4px solid #0F8DA6;
+    border-bottom-left-radius: 20px;
+}
+
+#armes:checked + .listElemCustom,
+#yeux:checked + .listElemCustom,
+#ice:checked + .listElemCustom,
+#kanpo:checked + .listElemCustom,
+#brasDroit:checked + .listElemCustom,
+#larbins:checked + .listElemCustom,
+#mascotte:checked + .listElemCustom,
+#annee1627:checked + .listElemChrono,
+#annee1629:checked + .listElemChrono{
+    color : #0F8DA6;
+}
+
+#armesList,
+#yeuxList,
+#iceList,
+#kanpoList,
+#autreList,
+#brasDroitList,
+#larbinsList,
+#mascotteList,
+#list1627,
+#list1629,
+input[type="radio"]{
+    display: none;
+}
+
+.listCustom:has(#armes:checked) + #techList #armesList,
+.listCustom:has(#yeux:checked) + #techList #yeuxList,
+.listCustom:has(#ice:checked) + #techList #iceList,
+.listCustom:has(#kanpo:checked) + #techList #kanpoList,
+.listCustom:has(#autre:checked) + #techList #autreList,
+.listCustom:has(#brasDroit:checked) + #pnjList #brasDroitList,
+.listCustom:has(#larbins:checked) + #pnjList #larbinsList,
+.listCustom:has(#mascotte:checked) + #pnjList #mascotteList,
+#listChrono:has(#annee1627:checked) + #listRP #list1627,
+#listChrono:has(#annee1629:checked) + #listRP #list1629{
+    display : block;
+}
+
+.nomTech{
+    display: flex;
+    color: #ffffff;
+    background-color: #414141;
+    font-size: 1.5em;
+    letter-spacing: .12rem;
+    padding-left: 10px;
+    padding-block: 5px;
+    font-family: 'New York Hardcore', sans-serif;
+    clip-path: polygon(0 0, 90% 0, 100% 99%, 0% 100%);
+    z-index: 2;
+    position: relative;
+    border-left: 4px solid #0F8DA6;
+}
+
+.borderTech{
+    clip-path: polygon(0 0, 88.5% 0, 100% 99%, 0% 100%);
+    background-color: #0F8DA6;
+    position: absolute;
+    height: 45px;
+    top: -3px;
+}
+
+.techSlot{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.descSlot{
+    border: 4px solid #0F8DA6;
+    border-radius: 0 30px 30px 30px;
+    padding: 30px;
+    background-color: #414141;
+    color: #ffffff;
+}
+
+.descPnj{
+    border-bottom-left-radius: 0;
+    border-left: unset;
+    height: 260px;
+    overflow-y: scroll;
+}
+
+.listSlot{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.quote{
+    font-style: italic;
+    color : #0F8DA6;
+}
