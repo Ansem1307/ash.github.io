@@ -67,7 +67,7 @@
 
 .pnjFT{
     border-top-left-radius: 0;
-    height: 320px;
+    height: 320px !important;
     width: 150px;
 }
 
@@ -271,7 +271,7 @@ input[type="radio"]{
 .descPnj{
     border-bottom-left-radius: 0;
     border-left: unset;
-    height: 260px;
+    height: 320px;
     overflow-y: scroll;
 }
 
