@@ -37,9 +37,9 @@
     position: absolute;
     clip-path: polygon(0 0, 88.5% 0, 100% 99%, 0% 100%);
     background-color: #0F8DA6;
-    width: 470px;
+    width: 461px;
     height: 45px;
-    bottom: -14px;
+    bottom: -13px;
     left: 0;
 }
 
@@ -129,11 +129,11 @@
 }
 
 .listCustom{
-    list-style-type: none;
+    list-style-type: none !important;
     display: flex;
     flex-direction: column;
-    margin: 0 0 20px;
-    padding: 0;
+    margin: 0 0 20px !important;
+    padding: 0 !important;
 }
 
 #listChrono{
@@ -149,6 +149,7 @@
     padding-block: 10px;
     font-family: 'New York Hardcore', sans-serif;
     border-bottom : none;
+    margin:0;
 }
 
 .listElemChrono:first-of-type{
@@ -179,6 +180,7 @@
     display: flex;
     align-items: center;
     width: 15px;
+    margin : 0;
 }
 
 .listElemCustom:first-of-type{
