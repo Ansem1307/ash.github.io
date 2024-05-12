@@ -276,7 +276,7 @@ input[type="radio"]{
 }
 
 .listSlot{
-    list-style-type: none;
+    list-style-type: none !important;
     display: flex;
     flex-direction: column;
     gap: 10px
