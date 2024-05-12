@@ -1,6 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/new-york-hardcore');
 
-#ficheJess{
+.ficheJess{
     width: 800px;
 }
 
@@ -21,7 +21,7 @@
     position: absolute;
     bottom: -10px;
     left: 0;
-    width : 450px;
+    width : 355px;
     color: #ffffff;
     background-color: #414141;
     font-size: 1.5em;
@@ -37,7 +37,7 @@
     position: absolute;
     clip-path: polygon(0 0, 88.5% 0, 100% 99%, 0% 100%);
     background-color: #0F8DA6;
-    width: 461px;
+    width: 365px;
     height: 45px;
     bottom: -13px;
     left: 0;
