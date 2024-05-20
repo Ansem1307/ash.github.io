@@ -8,9 +8,8 @@
 }
 
 #imageHeader{
-    /*width: 800px;*/
     transform: translateX(150px);
-    height: 300px;
+    height: 299px;
     object-fit: cover;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
@@ -22,7 +21,7 @@
     position: absolute;
     max-width: 357px;
     height: 300px;
-    padding-left: 15px;
+    padding-inline: 15px;
     background-color: #156394;
     color: white;
     display: flex;
@@ -51,15 +50,16 @@
 
 .teteParticipant{
     width: 70px;
-    height: 70px;
+    height: 70px !important;
     object-fit: cover;
     border-radius: 50%;
 }
 
 #messageBody{
-    width: 740px;
+    width: 800px;
     background-color: #1b4b64;
     padding-inline : 30px;
+    padding-bottom : 4px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
 }
