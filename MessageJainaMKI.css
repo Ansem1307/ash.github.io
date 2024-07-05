@@ -1,0 +1,125 @@
+.messageJaina {
+    width: 666px;
+    position: relative;
+}
+
+.imageHeader {
+    position: relative;
+    z-index: 10;
+}
+
+.rightCorner {
+    position: absolute;
+    right: 375px;
+    top: 82px;
+}
+
+.leftCorner {
+    transform: scaleX(-1);
+    position: absolute;
+    left: 375px;
+    top: 82px;
+}
+
+.out {
+    width: 355px;
+    height: 150px;
+    background-color: transparent;
+    position: absolute;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.in {
+    width: 350px;
+    height: 550px;
+    position: absolute;
+    left: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 500px grey;
+    border: 3px solid black;
+}
+
+.bottom .in {
+    bottom: 0;
+}
+
+.corpsMessage {
+    position: relative;
+    background: grey;
+    padding: 30px;
+    border: 3px solid black;
+    border-top: unset;
+}
+
+.borderTop {
+    position: absolute;
+    width: 400px;
+    height: 3px;
+    background-color: black;
+    top: 99px;
+    left: 133px;
+}
+
+.infoRPJaina {
+    font-size: 2rem;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    padding: 30px;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: #000000b8;
+    margin-bottom: 30px;
+}
+
+auteur {
+    color: #ff5a5a;
+    align-self: end;
+}
+
+encart {
+    display: flex;
+    flex-direction: column;
+    background-color: #393939;
+    padding: 20px;
+    font-family: 'ADLaM Display', sans-serif;
+    color: #cfcfcf;
+    margin-bottom: 30px;
+    text-align: start;
+}
+
+.messageItself {
+    display: block;
+    background-color: #d1d1d1;
+    font-size: 1.5rem !important;
+    color: black;
+    text-align: start;
+    padding: 30px;
+}
+
+.headFrame {
+    height: 110px;
+    width: 90px;
+    background-size: cover;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+}
+
+.headFrame > img {
+    width: 90px;
+    height: 104px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.headContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+} 
