@@ -161,6 +161,11 @@
 
     allButton.forEach(button => {
         button.addEventListener('touchstart', (event) => {
+            document.querySelectorAll('span').forEach(span => {
+                span.classList.remove('block');
+                span.classList.add('hidden');
+            })
+
             const target = event.target;
             const spans = target.getElementsByTagName('span');
             for (let i = 0; i < spans.length; i++) {
@@ -172,4 +177,3 @@
 </script>
 </body>
 </html>
-
