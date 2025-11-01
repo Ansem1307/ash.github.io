@@ -157,24 +157,19 @@
 </div>
 
 <script>
-document.addEventListener('touchstart', function(event) {
-    const target = event.target;
-    if (target.tagName === 'button') {
-        const spans = target.getElementsByTagName('span');
-        for (let i = 0; i < spans.length; i++) {
-            spans[i].classList.remove('hidden');
-            spans[i].classList.add('block');
-        }
-        const otherButtons = document.querySelectorAll('button:not(.group-hover)');
-        for (let i = 0; i < otherButtons.length; i++) {
-            const otherSpans = otherButtons[i].getElementsByTagName('span');
-            for (let j = 0; j < otherSpans.length; j++) {
-                otherSpans[j].classList.remove('block');
-                otherSpans[j].classList.add('hidden');
+    const allButton = document.querySelectorAll('button')
+
+    allButton.forEach(button => {
+        button.addEventListener('touchstart', (event) => {
+            const target = event.target;
+            const spans = target.getElementsByTagName('span');
+            for (let i = 0; i < spans.length; i++) {
+                spans[i].classList.remove('hidden');
+                spans[i].classList.add('block');
             }
-        }
-    }
-});
+        })
+    })
 </script>
 </body>
 </html>
+
